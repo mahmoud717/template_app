@@ -21,7 +21,19 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# for bootstrap
+gem 'bootstrap', '~> 4.5', '>= 4.5.2'
+gem 'jquery-rails'
+
+# for devise
 gem 'devise'
+
+# for simple form
+gem 'simple_form', '~> 5.0', '>= 5.0.3'
+
+# for gravatar
+gem 'gravatar_image_tag', '~> 1.2'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -35,6 +47,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors', '~> 2.8', '>= 2.8.3'
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
@@ -53,3 +68,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Commands to run 
+# 1- guard init livereload => for live-reload
+# 2- rails generate simple_form:install --bootstrap => for simple forms 
+# 3- rails g devise:install => for devise
+# 4- rails g devise:views => for devise views
+
+
+# troubleshooting 
+# gem update --system 3.0.8 && gem update --system
