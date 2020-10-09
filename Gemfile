@@ -74,7 +74,26 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # 2- rails generate simple_form:install --bootstrap => for simple forms 
 # 3- rails g devise:install => for devise
 # 4- rails g devise:views => for devise views
-
+# 5- rails g devise [model-name]
 
 # troubleshooting 
 # gem update --system 3.0.8 && gem update --system
+
+# ------------heroku-----------------#
+
+# first install heroku (one time only)
+# --- curl https://cli-assets.heroku.com/install.sh | sh ---
+
+# then run the following commands
+
+# 1- heroku login
+# 2- heroku create [app-name] or heroku git:remote -a [app-name]
+# 3- git push heroku [branch-name]:main
+# 4- heroku run rails db:migrate
+# 5- heroku open
+# -- additional
+# - heroku run console
+# - heruko logs -t
+# - heruko restart
+
+#-------------------------------------#
