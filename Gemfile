@@ -78,6 +78,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # troubleshooting 
 # gem update --system 3.0.8 && gem update --system
+# ------------------------------------ #
+# to restart the postgres server
+# sudo service postgresql restart
 
 # ------------heroku-----------------#
 
